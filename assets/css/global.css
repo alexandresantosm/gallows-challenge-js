@@ -6,11 +6,15 @@
     --light-blue-400: #d8dfe8;
   }
 
-  html {
+html {
     font-size: 0.625rem; /* Font-size: 10px */
-  }
+}
   
-  body {  
+body {  
     font-family: "Inter", sans-serif;
     background-color: var(--light-blue-200);
-  }
+}
+
+.container {
+    padding: 2.4rem 1.6rem;
+}
