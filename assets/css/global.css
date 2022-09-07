@@ -14,9 +14,15 @@
 html {
     font-size: 0.625rem; /* Font-size: 10px */
 }
+
+body,
+textarea,
+a {
+    font-family: "Inter", sans-serif;
+}
   
 body {  
-    font-family: "Inter", sans-serif;
+   
     background-color: var(--light-blue-200);
 }
 
@@ -36,7 +42,46 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.new-word {
+    justify-content: space-between;
+}
+
+.new-word-input {
+    width: 100%;
+    margin-top: 5.6rem;
+    align-self: flex-start;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: var(--dark-blue-400);
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.new-word-input::placeholder {
+    opacity: 1;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 1.6rem;
+}
+
+.info {
+    width: 100%;
+    display: flex;
+    align-self: flex-start;
+    gap: 0.8rem;
+    color: var(--gray-300);
+    font-size: 1.2rem;
+    line-height: 150%;
 }
 
 .btn {
@@ -51,10 +96,17 @@ body {
     text-align: center;
 }
 
-.btn-filled {
+.btn-strong {
     padding-block: 4rem;
+}
+
+.btn-filled {
     background-color: var(--dark-blue-400);
     color: var(--light-blue-200);
+}
+
+.new-word .btn-outline {
+    width: 100%;
 }
 
 .btn-outline {
