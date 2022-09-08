@@ -22,21 +22,26 @@ a {
 }
   
 body {  
-   
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--light-blue-200);
 }
 
 .container {
-    width: 100vw;
-    height: calc(100vh - var(--height-footer));
+    width: 37.5rem;
+    height: 66.7rem;
 }
 
-.new-game {
+.new-game,
+.new-game > .container {
     height: 87.3rem;
 }
 
 .content {
-    height: 100%;
+    height: calc(100% - var(--height-footer));
     padding: var(--padding-vertical-container) 1.6rem;
 }
 
