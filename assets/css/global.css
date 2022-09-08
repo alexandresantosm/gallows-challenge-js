@@ -31,6 +31,10 @@ body {
     height: calc(100vh - var(--height-footer));
 }
 
+.new-game {
+    height: 87.3rem;
+}
+
 .content {
     height: 100%;
     padding: var(--padding-vertical-container) 1.6rem;
@@ -42,6 +46,10 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.new-game main {
+    height: 100%;
 }
 
 .new-word {
@@ -63,6 +71,63 @@ body {
 
 .new-word-input::placeholder {
     opacity: 1;
+}
+
+.gallows {
+    width: 100%;
+    height: 50.7rem;
+}
+
+
+.gallows img {
+    height: 31.59rem;
+    display: block;
+    margin: auto;
+}
+
+.word {
+    height: 11.6rem;
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.letter li {
+    width: 3.2rem;
+    display: inline-block;
+    list-style: none;
+    padding-bottom: 0.8rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    line-height: 150%;
+}
+
+.letter li + li {
+    margin-left: 0.8rem;
+}
+
+.correct-letters li {
+    position: relative;
+    color: var(--dark-blue-400);
+}
+
+.correct-letters li::after {
+    content: '';
+    position: absolute;
+    width: 3.2rem;
+    height: 0.4rem;
+    background-color: var(--dark-blue-400);
+    left: 0;
+    bottom: 0;
+    border-radius: 0.8rem;
+}
+
+.wrong-letters li {
+    color: var(--gray-300);
 }
 
 .buttons {
@@ -105,12 +170,12 @@ body {
     color: var(--light-blue-200);
 }
 
-.new-word .btn-outline {
-    width: 100%;
+.home .btn-outline {
+    width: 29.3rem;
 }
 
 .btn-outline {
-    width: 29.3rem;
+    width: 100%;
     background-color: transparent;
     color: var(--dark-blue-400);
 }
