@@ -1,196 +1,195 @@
 :root {
-    /* Colors variables */
-    --dark-blue-400: #0a3871;
-    --gray-300: #495057;
-    --gray-500: #343a40;
-    --light-blue-200: #f3f5fc;
-    --light-blue-400: #d8dfe8;
+  /* Colors variables */
+  --dark-blue-400: #0a3871;
+  --gray-300: #495057;
+  --gray-500: #343a40;
+  --light-blue-200: #f3f5fc;
+  --light-blue-400: #d8dfe8;
 
-    /* Variables */
-    --padding-vertical-container: 2.4rem;
-    --height-footer: 8rem;
-  }
+  /* Variables */
+  --padding-vertical-container: 2.4rem;
+  --height-footer: 8rem;
+}
 
 html {
-    font-size: 0.625rem; /* Font-size: 10px */
+  font-size: 0.625rem; /* Font-size: 10px */
 }
 
 body,
 textarea,
 a {
-    font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif;
 }
-  
-body {  
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--light-blue-200);
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light-blue-200);
 }
 
 .container {
-    width: 37.5rem;
-    height: 66.7rem;
+  width: 37.5rem;
+  height: 66.7rem;
 }
 
 .new-game,
 .new-game > .container {
-    height: 87.3rem;
+  height: 87.3rem;
 }
 
 .content {
-    height: calc(100% - var(--height-footer));
-    padding: var(--padding-vertical-container) 1.6rem;
+  height: calc(100% - var(--height-footer));
+  padding: var(--padding-vertical-container) 1.6rem;
 }
 
 .main {
-    height: calc(100% - (2 * var(--padding-vertical-container)));
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  height: calc(100% - (2 * var(--padding-vertical-container)));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .new-game main {
-    height: 100%;
+  height: 100%;
 }
 
 .new-word {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .new-word-input {
-    width: 100%;
-    margin-top: 5.6rem;
-    align-self: flex-start;
-    outline: none;
-    border: none;
-    background-color: transparent;
-    color: var(--dark-blue-400);
-    font-size: 3.2rem;
-    font-weight: 400;
-    line-height: 150%;
+  width: 100%;
+  margin-top: 5.6rem;
+  align-self: flex-start;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: var(--dark-blue-400);
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 150%;
 }
 
 .new-word-input::placeholder {
-    opacity: 1;
+  opacity: 1;
 }
 
 .gallows {
-    width: 100%;
-    height: 50.7rem;
+  width: 100%;
+  height: 50.7rem;
 }
 
-
 .gallows img {
-    height: 31.59rem;
-    display: block;
-    margin: auto;
+  height: 31.59rem;
+  display: block;
+  margin: auto;
 }
 
 .word {
-    height: 11.6rem;
-    margin-top: 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 2.4rem;
+  height: 11.6rem;
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2.4rem;
 }
 
 .letter li {
-    width: 3.2rem;
-    display: inline-block;
-    list-style: none;
-    padding-bottom: 0.8rem;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 2.4rem;
-    line-height: 150%;
+  width: 3.2rem;
+  display: inline-block;
+  list-style: none;
+  padding-bottom: 0.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  line-height: 150%;
 }
 
 .letter li + li {
-    margin-left: 0.8rem;
+  margin-left: 0.8rem;
 }
 
 .correct-letters li {
-    position: relative;
-    color: var(--dark-blue-400);
+  position: relative;
+  color: var(--dark-blue-400);
 }
 
 .correct-letters li::after {
-    content: '';
-    position: absolute;
-    width: 3.2rem;
-    height: 0.4rem;
-    background-color: var(--dark-blue-400);
-    left: 0;
-    bottom: 0;
-    border-radius: 0.8rem;
+  content: "";
+  position: absolute;
+  width: 3.2rem;
+  height: 0.4rem;
+  background-color: var(--dark-blue-400);
+  left: 0;
+  bottom: 0;
+  border-radius: 0.8rem;
 }
 
 .wrong-letters li {
-    color: var(--gray-300);
+  color: var(--gray-300);
 }
 
 .buttons {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1.6rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
 }
 
 .info {
-    width: 100%;
-    display: flex;
-    align-self: flex-start;
-    gap: 0.8rem;
-    color: var(--gray-300);
-    font-size: 1.2rem;
-    line-height: 150%;
+  width: 100%;
+  display: flex;
+  align-self: flex-start;
+  gap: 0.8rem;
+  color: var(--gray-300);
+  font-size: 1.2rem;
+  line-height: 150%;
 }
 
 .btn {
-    width: 100%;
-    padding: 2.4rem;
-    border-radius: 2.4rem;
-    border: 1px solid var(--dark-blue-400);
-    font-size: 1.6rem;
-    line-height: 1.936rem;
-    cursor: pointer;
-    text-decoration: none;
-    text-align: center;
+  width: 100%;
+  padding: 2.4rem;
+  border-radius: 2.4rem;
+  border: 1px solid var(--dark-blue-400);
+  font-size: 1.6rem;
+  line-height: 1.936rem;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
 }
 
 .btn-strong {
-    padding-block: 4rem;
+  padding-block: 4rem;
 }
 
 .btn-filled {
-    background-color: var(--dark-blue-400);
-    color: var(--light-blue-200);
+  background-color: var(--dark-blue-400);
+  color: var(--light-blue-200);
 }
 
 .home .btn-outline {
-    width: 29.3rem;
+  width: 29.3rem;
 }
 
 .btn-outline {
-    width: 100%;
-    background-color: transparent;
-    color: var(--dark-blue-400);
+  width: 100%;
+  background-color: transparent;
+  color: var(--dark-blue-400);
 }
 
 .footer {
-    height: var(--height-footer);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--dark-blue-400);
-    color: var(--light-blue-200);
-    font-size: 1.2rem;
+  height: var(--height-footer);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark-blue-400);
+  color: var(--light-blue-200);
+  font-size: 1.2rem;
 }
